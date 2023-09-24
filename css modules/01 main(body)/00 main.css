@@ -1,0 +1,13 @@
+.main{
+    direction: rtl;
+    width: 100%;
+    max-width: 1920px;
+    padding-top: 0;
+    margin: auto;
+}
+section{
+    width: 100%;
+    max-width: 1920px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}

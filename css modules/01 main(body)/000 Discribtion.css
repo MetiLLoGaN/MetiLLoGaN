@@ -1,0 +1,55 @@
+body .describtion-section{
+    width: 100%;
+    height: auto;
+    direction: rtl;
+    padding: 2rem 0;
+
+}
+body .describtion-container{
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    border-left: none;
+    border-right: none;
+    /* box-shadow: 0 0 10px 1px rgb(255, 255, 255); */
+}
+body .describtion-container .describe-box{
+    padding: 15px 0;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    border-right: 5px solid rgb(97, 0, 0);
+    margin-right:40px;
+}
+body h1{
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.describ p {
+    display: inline-block;
+    width: fit-content;
+}
+.describ-app{
+    background-color: white;
+    display:inline-block;
+    border: 1.5px solid red;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    
+}
+
+.describ-app a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: .35rem 1rem;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+.bgcR{
+    background-color: red;
+}
+.cW{
+    color: white !important;
+}
