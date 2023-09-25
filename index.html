@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Static src/css reset.css" />
+    <link rel="stylesheet" href="./Static src/FontFace7.css" />
+    <link rel="stylesheet" href="Default.css" />
+    <link rel="stylesheet" href="css modules/00 Header/00 Header.css" />
+    <link rel="stylesheet" href="css modules/00 Header/01 HatStyle.css" />
+    <link rel="stylesheet" href="css modules/00 Header/02 0 NavStyle.css" />
+    <link rel="stylesheet" href="css modules/00 Header/02 00 NavMiniList.css" />
+    <link rel="stylesheet" href="css modules/00 Header/03 Banner.css" />
+    <link
+      rel="stylesheet"
+      href="css modules/01 main(body)/000 Discribtion.css" />
+    <link rel="stylesheet" href="css modules/01 main(body)/00 main.css" />
+    <link rel="stylesheet" href="css modules/01 main(body)/01 hints.css" />
+    <link rel="stylesheet" href="css modules/01 main(body)/02 Products.css" />
+    <link rel="stylesheet" href="css modules/01 main(body)/03 Costumers.css" />
+    <link rel="stylesheet" href="css modules/01 main(body)/04 Blogs.css" />
+    <link rel="stylesheet" href="css modules/02 Footer/00 Footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>TF Nikan</title>
+  </head>
+  <body>
+    <header>
+      <div class="hat">
+          <div class="hat-links">
+              <div class="social-hat-element" data-tilt><div><a href="#target"><i class="fa fa-instagram"></i></a></div></div>
+              <div class="social-hat-element" data-tilt><div><a href="#target"><i class="fa fa-rss"></i></a></div></div>
+              <div class="social-hat-element" data-tilt><div><a href="#target"><i class="fa fa-linkedin"></i></a></div></div>
+              <div class="social-hat-element" data-tilt><div><a href="#target"><i class="fa fa-pinterest"></i></a></div></div>
+              <div class="social-hat-element" data-tilt><div><a href="#target"><i class="fa fa-facebook"></i></a></div></div>
+              <div class="social-hat-element" data-tilt><div><a href="#target"><i class="fa fa-twitter"></i></a></div></div>
+          </div>
+          <div class="hat-banner">
+              <p>
+                  <img src="../Static src/1033-398 logo Sfixed.png" alt="">
+              </p>
+          </div>
+      </div>
+      <nav class="">
+          <div class="nav-bar">
+              <ul class="nav-list">
+                  <li class="selected bounceclick"><a href="./">صفحه نخست</a ></li>
+                  <li>
+                      <a href="./main/Products" class=" bounceclick NavMiniList-span">محصولات</a >
+                      <ul class="NavMiniList NavMiniList">
+                          <li>
+                              <a href="javascript: void(0)" onclick="assorter(this)" assortment="gps">مکان‌یاب (GPS)</a>
+                              <ul class="NavMiniList NavMiniList navmini-2">
+                                  <li><a href="javascript: void(0)" onclick="assorter(this)" assortment="car-gps">مکان‌یاب خودرو</a></li>
+                                  <li><a href="javascript: void(0)" onclick="assorter(this)" assortment="mobolity-gps">مکان‌یاب شخصی</a></li>
+                                  <li><a href="javascript: void(0)" onclick="assorter(this)" assortment="gps-accessories">لوازم جانبی مکان‌یاب</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="javascript: void(0)" onclick="assorter(this)" assortment="CCTV">دوربین مداربسته (CCTV)</a>
+                              <ul class="NavMiniList NavMiniList navmini-2">
+                                  <li><a href="javascript: void(0)" onclick="assorter(this)" assortment="IP-CCTV">دوربین تحت شبکه(IP)</a>
+                                      <ul class="NavMiniList NavMiniList navmini-3">
+                                          <li><a href="javascript: void(0)" onclick="assorter(this)" assortment="IP-camera">دوربین</a></li>
+                                          <li><a href="javascript: void(0)" onclick="assorter(this)" assortment="IP-recorder">دستگاه ضبط تحت شبکه</a></li>
+                                          <li><a href="javascript: void(0)"onclick="assorter(this)" assortment="IP-CCTV-switches">سوویچ</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="javascript: void(0)" onclick="assorter(this)" assortment="AHD-CCTV">دوربین مداربسته(AHD)</a>
+                                      <ul class="NavMiniList NavMiniList navmini-3">
+                                          <li><a href="javascript: void(0)" onclick="assorter(this)" assortment="AHD-camera">دوربین</a></li>
+                                          <li><a href="javascript: void(0)" onclick="assorter(this)" assortment="AHD-recorder">دستگاه ضبط تصاویر هیبرید</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li><a href="#item3">نرم افزار</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#target" class="bounceclick">خدمات</a >
+                      <ul class="NavMiniList NavMiniList">
+                          <li><a href="#item1">اندازه گیری آنلاین دما</a></li>
+                          <li><a href="#item2">نمایش سطح سوخت خودرو</a></li>
+                          <li><a href="#item3">اتصال به عملگرها از راه دور</a></li>
+                      </ul>
+                  </li>
+                  <!-- <li><a href="#target" class="bounceclick">نمایندگی ها</a ></li> -->
+                  <!-- <li><a href="#target" class="bounceclick">مقالات</a ></li> -->
+                  <li><a href="#target" class="bounceclick">درباره ما</a ></li>
+                  <li><a href="#target" class="bounceclick">تماس با ما</a ></li>
+                  <li id="login-raahyab" style="margin-left:20px;"><a href="http://raahyab.com/">ورود به راهیاب</a ></li>
+              </ul>
+              <div class="search-container">
+                  <input type="search" class="search-bar" placeholder="دنبال چی میگردی؟" >
+                  <i class="fa fa-search nav-search bounceclick" style="margin-left: px;"></i>
+                  <div class="hat-menu bounceclick">
+                      <a href="#target"><i class="fa fa-bars"></i></a>
+                  </div>
+              </div>
+
+          </div>
+      </nav>
+      <div class="banner">
+          <div class="slider">
+              <div><img id="img-1" src="./dayii png/gps wallpaper 1.jpg" alt="Image 1"/></div>
+              <div><img id="img-2" src="./dayii png/gps wallpaper 2.png" alt="Image 2"/></div>
+              <div><img id="img-3" src="./dayii png/gps wallpaper 3.jpg" alt="Image 3"/></div>
+          </div>
+          <div class=""></div>
+          <div class="navigation-button">
+              <div class="dot-container">
+                  <span class="dot" onclick="changeSlide(0)"></span>
+                  <span class="dot" onclick="changeSlide(1)"></span>
+                  <span class="dot active" onclick="changeSlide(2)"></span>
+              </div>
+          </div>
+      </div>
+  </header>
+    <div class="main">
+      <div class="describtion-section">
+        <div class="describtion-container">
+          <div class="describe-box">
+            <h1>سامانه ردیابی توسعه فناوری نیکان</h1>
+            <div class="describ">
+              <p>
+                شرکت نیکان ، تولید کننده نرم افزار های تخصصی ردیابی خودرو و
+                مدیریت ناوگان ، با قابلیت سفارشی سازی برای مشتری...
+              </p>
+              <div class="describ-app">
+                <a href="http://raahyab.com/login">دانلود نرم افزار</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="hints" dir="rtl">
+          <h2 class="hints-h2">
+            ما به فرآیند ردیابی خودرو و مدیریت ناوگان تسلط داریم!
+          </h2>
+          <div class="third-object">
+            <div class="cloumn">
+              <a class="hint-img" href="#target">
+                <div>
+                  <img
+                    src="Static src/7.jpg"
+                    style="width: 100px; height: 100px"
+                    alt="" />
+                </div>
+              </a>
+              <div class="cloumn-text">
+                <h2
+                  class="cloumn-title"
+                  style="font-size: 2rem; font-weight: bold">
+                  <a href="">HEADER</a>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  quidem fugit similique laboriosam explicabo ex nihil magni a
+                  repellendus eaque, ad voluptates dolorem? Atque aliquam
+                  consequatur sit omnis pariatur labore!
+                </p>
+              </div>
+            </div>
+            <div class="cloumn">
+              <a class="hint-img" href="#target">
+                <div>
+                  <img
+                    src="Static src/7.jpg"
+                    style="width: 100px; height: 100px"
+                    alt="" />
+                </div>
+              </a>
+              <div class="cloumn-text">
+                <h2
+                  class="cloumn-title"
+                  style="font-size: 2rem; font-weight: bold">
+                  <a href="">HEADER</a>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  quidem fugit similique laboriosam explicabo ex nihil magni a
+                  repellendus eaque, ad voluptates dolorem? Atque aliquam
+                  consequatur sit omnis pariatur labore!
+                </p>
+              </div>
+            </div>
+            <div class="cloumn">
+              <a class="hint-img" href="#target">
+                <div>
+                  <img
+                    src="Static src/7.jpg"
+                    style="width: 100px; height: 100px"
+                    alt="" />
+                </div>
+              </a>
+              <div class="cloumn-text">
+                <h2
+                  class="cloumn-title"
+                  style="font-size: 2rem; font-weight: bold">
+                  <a href="">HEADER</a>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  quidem fugit similique laboriosam explicabo ex nihil magni a
+                  repellendus eaque, ad voluptates dolorem? Atque aliquam
+                  consequatur sit omnis pariatur labore!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="products-container">
+          <div class="product-container-h2">
+            <span class="line"></span>
+            <div><h2>محصولات ردیابی اشخاص وخودرو</h2></div>
+          </div>
+          <div class="portfolio-container">
+            <div class="portfolio-desc">
+              ردیاب خودرو تلتونیکا ساخت اروپا ، همراه با 12 تا 24 ماه گارانتی
+            </div>
+          </div>
+          <div class="products clearfix">
+            <figure>
+              <img src="Static src/Products/images/FMB120.png" alt="" />
+              <figcaption id="m123">
+                <h2 class="product-h2">نام محصول</h2>
+                <div class="product-text-container">
+                  <p>
+                    this text is for testing somthings you dont know and its for
+                    developer
+                  </p>
+                  <div class="product-more">
+                    <a href="#target">مشاهده جزئیات</a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="Static src/Products/images/FMB202.png" alt="" />
+              <figcaption id="m123">
+                <h2 class="product-h2">نام محصول</h2>
+                <div class="product-text-container">
+                  <p>
+                    this text is for testing somthings you dont know and its for
+                    developer
+                  </p>
+                  <div class="product-more">
+                    <a href="#target">مشاهده جزئیات</a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="Static src/Products/images/FMB641.png" alt="" />
+              <figcaption id="m123">
+                <h2 class="product-h2">نام محصول</h2>
+                <div class="product-text-container">
+                  <p>
+                    this text is for testing somthings you dont know and its for
+                    developer
+                  </p>
+                  <div class="product-more">
+                    <a href="#target">مشاهده جزئیات</a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="Static src/Products/images/FMB920.png" alt="" />
+              <figcaption id="m123">
+                <h2 class="product-h2">نام محصول</h2>
+                <div class="product-text-container">
+                  <p>
+                    this text is for testing somthings you dont know and its for
+                    developer
+                  </p>
+                  <div class="product-more">
+                    <a href="#target">مشاهده جزئیات</a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="last-line">
+            <div class="line"></div>
+            <div class="up-icon">
+              <i class="fa fa-chevron-up"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="blogs-container">
+          <h2 class="blog-h2">بلاگ ها</h2>
+          <ul class="blog-cards auto-scroll-cont scrollable-btn-list">
+            <li class="blog-card">
+              <div>
+                <h3 class="blog-card-title">خدمات شرکت بهمن موتور</h3>
+                <div class="blog-card-content">
+                  <span>" </span>اگر شما یک طراح هستین و یا با طراحی های گرافیکی
+                  سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم
+                  شناخته می‌شوند.<span> "</span>
+                </div>
+              </div>
+              <div class="blog-card-link-wrapper">
+                <a href="" class="blog-card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="blog-card">
+              <div>
+                <h3 class="blog-card-title">خدمات شرکت بهمن موتور</h3>
+                <div class="blog-card-content">
+                  <span>" </span>اگر شما یک طراح هستین و یا با طراحی های گرافیکی
+                  سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم
+                  شناخته می‌شوند.<span> "</span>
+                </div>
+              </div>
+              <div class="blog-card-link-wrapper">
+                <a href="" class="blog-card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="blog-card">
+              <div>
+                <h3 class="blog-card-title">خدمات شرکت بهمن موتور</h3>
+                <div class="blog-card-content">
+                  <span>" </span>اگر شما یک طراح هستین و یا با طراحی های گرافیکی
+                  سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم
+                  شناخته می‌شوند.<span> "</span>
+                </div>
+              </div>
+              <div class="blog-card-link-wrapper">
+                <a href="" class="blog-card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="blog-card">
+              <div>
+                <h3 class="blog-card-title">
+                  <span>"</span>Service 2 <span>"</span>
+                </h3>
+                <div class="blog-card-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    repudiandae magnam harum natus fuga et repellat in maiores.
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card-link-wrapper">
+                <a href="" class="blog-card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="blog-card">
+              <div>
+                <h3 class="blog-card-title">
+                  <span>"</span>Service 3 <span>"</span>
+                </h3>
+                <div class="blog-card-content">
+                  <p>
+                    Phasellus ultrices lorem vel bibendum ultricies. In
+                    hendrerit nulla a ante dapibus pulvinar eu eget quam.
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card-link-wrapper">
+                <a href="" class="blog-card-link">Learn More</a>
+              </div>
+            </li>
+          </ul>
+          <div class="blogs-switch-button">
+            <div
+              onclick="goChangeItem(this)"
+              class="blogs-switch-nxt-pre btn-next-list">
+              <i class="fas fa-circle-chevron-right"></i>
+            </div>
+            <div
+              onclick="goChangeItem(this)"
+              class="blogs-switch-nxt-pre btn-pre-list">
+              <i class="fas fa-circle-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="costumersss">
+        <div class="costumer-container">
+          <h2 class="costumer-h2">مشتری های ما</h2>
+          <ul class="costumer-cards auto-scroll-cont scrollable-btn-list">
+            <li class="costumer-card">
+              <div>
+                <h3 class="costumer-card-title">همراه اول</h3>
+                <div class="costumer-card-content">
+                  <img src="./dayii png/hamrah-e-aval.png" alt="" />
+                </div>
+              </div>
+            </li>
+            <li class="costumer-card">
+              <div>
+                <h3 class="costumer-card-title">ایرتویا</h3>
+                <div class="costumer-card-content">
+                  <img src="./dayii png/irtoya.png" alt="" />
+                </div>
+              </div>
+            </li>
+            <li class="costumer-card">
+              <div>
+                <h3 class="costumer-card-title">هرمز</h3>
+                <div class="costumer-card-content">
+                  <img src="./dayii png/hormoz_logo.png" alt="" />
+                </div>
+              </div>
+            </li>
+            <li class="costumer-card">
+              <div>
+                <h3 class="costumer-card-title">نادری</h3>
+                <div class="costumer-card-content">
+                  <img src="./dayii png/naderi-logo.png" alt="" />
+                </div>
+              </div>
+            </li>
+            <li class="costumer-card">
+              <div>
+                <h3 class="costumer-card-title">نفت جی</h3>
+                <div class="costumer-card-content">
+                  <img src="./dayii png/jeyoil.png" alt="" />
+                </div>
+              </div>
+            </li>
+            <li class="costumer-card">
+              <div>
+                <h3 class="costumer-card-title">نگین خودرو</h3>
+                <div class="costumer-card-content">
+                  <img src="./dayii png/negin-car-logo.png" alt="" />
+                </div>
+              </div>
+            </li>
+            <li class="costumer-card">
+              <div>
+                <h3 class="costumer-card-title">سازمان برنامه و بودجه</h3>
+                <div class="costumer-card-content">
+                  <img src="./dayii png/barname-budjeh.png" alt="" />
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="costumers-switch-button">
+            <div
+              onclick="goChangeItem(this)"
+              class="costumers-switch-nxt-pre btn-next-list">
+              <i class="fas fa-circle-chevron-right"></i>
+            </div>
+            <div
+              onclick="goChangeItem(this)"
+              class="costumers-switch-nxt-pre btn-pre-list">
+              <i class="fas fa-circle-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <section>
+        <div class="footer-cloumns-container">
+          <div class="footer-pages-container footer-cloumn">
+            <div class="footer-cloumns-title">صفحه ها</div>
+            <div class="footer-cloumns-body">
+              <ul class="footer-pages-list">
+                <li>صفحه اصلی</li>
+                <li>نمایندگی ها</li>
+                <li>محصولات</li>
+                <li>مرکز دانلود</li>
+                <li>تماس با ما</li>
+              </ul>
+            </div>
+            <div></div>
+          </div>
+          <div class="footer-call-container footer-cloumn">
+            <div class="footer-cloumns-title">تماس با ما</div>
+            <div class="footer-cloumns-body">
+              <div class="footer-cloumns-body">
+                <ul class="footer-pages-list">
+                  <li>نوشته 1</li>
+                  <li>نوشته 2</li>
+                  <li>نوشته 3</li>
+                  <li>نوشته 4</li>
+                  <li>نوشته 5</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-blogs-container footer-cloumn">
+            <div class="footer-cloumns-title">آخرین نوشته ها</div>
+            <div class="footer-cloumns-body">
+              <ul class="footer-pages-list">
+                <li>نوشته 1</li>
+                <li>نوشته 2</li>
+                <li>نوشته 3</li>
+                <li>نوشته 4</li>
+                <li>نوشته 5</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-about-container footer-cloumn">
+            <div class="footer-about-logo">
+              <img src="./dayii png/TFN 512px.ico" alt="توسعه فناوری نیکان" />
+            </div>
+            <div class="footer-about-body">
+              <p>
+                اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به
+                متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.
+              </p>
+            </div>
+          </div>
+          <div class="footer-background-overlay"></div>
+        </div>
+      </section>
+      <div class="foot-container">
+        <div class="foot-links">
+          <div class="social-foot-element" data-tilt>
+            <div>
+              <a href="#target"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="social-foot-element" data-tilt>
+            <div>
+              <a href="#target"><i class="fa fa-rss"></i></a>
+            </div>
+          </div>
+          <div class="social-foot-element" data-tilt>
+            <div>
+              <a href="#target"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="social-foot-element" data-tilt>
+            <div>
+              <a href="#target"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="social-foot-element" data-tilt>
+            <div>
+              <a href="#target"><i class="fa fa-facebook"></i></a>
+            </div>
+          </div>
+          <div class="social-foot-element" data-tilt>
+            <div>
+              <a href="#target"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="foot-right">
+          <p>
+            تمام حقوق مادی و معنوی این سایت متعلق به شرکت توسعه فناوری نیکان می
+            باشد و استفاده از مطالب با ذکر منبع بلا مانع است.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/5e3ecce379.js"
+      crossorigin="anonymous"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script src="Js modules/banner.js"></script>
+    <script src="Js modules/animation.js"></script>
+    <script src="Js modules/scroll navbar.js"></script>
+    <script src="Js modules/menufading.js"></script>
+    <script src="Js modules/pre next btn.js"></script>
+<!--     <script src="Js modules/product creator.js"></script> -->
+    <script src="Js modules/StatePusher.js"></script>
+
+    <!-- <script src="Js modules/menufading.js"></script> -->
+  </body>
+</html>
